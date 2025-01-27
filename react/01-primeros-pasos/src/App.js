@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import MiComponente from './MiComponente';
+import SegundoComponente from './SegundoComponente';
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
           Estos son mis primeros pasos con react
         </p>
         <div className='Componentes'>
+        <hr/>
+        <SegundoComponente/>
+        
+        
         <hr/>
         <MiComponente/>
         </div>

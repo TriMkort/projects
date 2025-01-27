@@ -2,7 +2,7 @@ import React from 'react'
 
 const MiComponente = () => {
   return (
-    <div>
+    <div className='MiComponente'>
       <h1>Mi componente</h1>
       <h2>Estos son mi hobbits diarios</h2>
       <ul>
