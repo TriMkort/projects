@@ -1,13 +1,28 @@
 import React from 'react'
 
 const SegundoComponente = () => {
-  return (
-    <div className='SegundoComoponente'> {
 
+
+    
+    const libros = ["Padre rico", "Mente Estoica", "Poder Subconciente"];
+    // const libros = []
+
+
+    return (
+        <div className='SegundoComoponente'>
+            <h1>Listado de libros</h1>
+            {libros.length >= 1 ? (
+                <ul>
+                    {
+                        libros.map((libro, indice) =>{
+                            return <li key={indice}>{libro}</li>
+                        })
+                    }
+                </ul>)
+                : (<p>No hay libros</p>)
+            }       
+        </div>
+    )
     }
-      
-    </div>
-  )
-}
 
 export default SegundoComponente
