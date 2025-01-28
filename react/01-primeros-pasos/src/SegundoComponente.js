@@ -8,7 +8,6 @@ const SegundoComponente = () => {
         <div>
             <h1>Segundo Componente</h1>
             <h2>Listado de libros</h2>
-            {/*Con length podremos crear una condicion if luego con los dos puntos podremos definir el else*/}
             {libros.length >= 1 ? (
                 <ul>
                         {
