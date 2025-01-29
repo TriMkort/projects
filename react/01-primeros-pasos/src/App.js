@@ -16,15 +16,14 @@ function App(){
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Estos son mis primeros pasos con react
+          Estos son mis primeros pasos con react :D
         </p>
         <div className='Componentes'>
-        
         <hr/>
-        <TercerComponente
-        nombre ="Maikol"
-        apellido ="Sabogal"
-        ficha = {ficha_medica}/>
+        <TercerComponente 
+
+        ficha = {ficha_medica}
+        />
         <hr/>
         <SegundoComponente/>
         <hr/>
