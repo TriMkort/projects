@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const TercerComponente = ({nombre, apellido, ficha}) => {
 
@@ -22,3 +23,4 @@ const TercerComponente = ({nombre, apellido, ficha}) => {
 }
 
 export default TercerComponente;
+ 
