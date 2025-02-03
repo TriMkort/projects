@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TercerComponente = ({nombre, apellido, ficha}) => {
 
     return (
-      <div className='Tercer-Componente'>
+      <div className="Tercer-Componente">
         <h1>Tercer Componente</h1>
         <h2>Comuniciacion entre componentes</h2>
           

@@ -3,6 +3,7 @@ import './App.css';
 import MiComponente from './MiComponente';
 import SegundoComponente from './SegundoComponente';
 import TercerComponente from './TercerComponente';
+import EventosComponente from './EventosComponente';
 
 function App(){
   const ficha_medica ={
@@ -18,7 +19,9 @@ function App(){
         <p>
           Estos son mis primeros pasos con react :D
         </p>
-        <div className='Componentes'>
+        <div className='Componentes'> 
+        <hr/>
+        <EventosComponente/>
         <hr/>
         <TercerComponente 
 

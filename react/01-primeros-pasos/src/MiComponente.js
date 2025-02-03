@@ -15,4 +15,4 @@ const MiComponente = () => {
   )
 }
 
-export default MiComponente
+export default MiComponente;
