@@ -5,11 +5,11 @@ import SegundoComponente from './SegundoComponente';
 import TercerComponente from './TercerComponente';
 
 function App(){
-  const ficha_medica ={
-    altura:"180",
-    grupo:"o+",
-    alergias:"Ninguna",
-    estado:"Bueno"
+  const ficha_medica = {
+    altura: "180",
+    grupo: "O+",
+    alergias: "Ninguna",
+    estado: "Bueno"
   }
   return (
     <div className="App">
@@ -21,8 +21,8 @@ function App(){
         <div className='Componentes'>
         <hr/>
         <TercerComponente 
-
-        ficha = {ficha_medica}
+          nombre="Stiven"
+          ficha={ficha_medica}
         />
         <hr/>
         <SegundoComponente/>
