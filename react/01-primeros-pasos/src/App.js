@@ -24,7 +24,8 @@ function App(){
         <EventosComponente/>
         <hr/>
         <TercerComponente 
-
+        nombre = ""
+        apellido = ""
         ficha = {ficha_medica}
         />
         <hr/>

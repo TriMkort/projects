@@ -17,18 +17,20 @@ const TercerComponente = ({nombre, apellido, ficha}) => {
           <li>{ficha.altura}</li>
         </ul>
       </div>
-    )  
-}
+      )    
+    }
+    
+        TercerComponente.propTypes = {
+          nombre: PropTypes.string.isRequired,
+          apellido: PropTypes.string.isRequired,
+          ficha: PropTypes.object
+        };
 
-  TercerComponente.propTypes = {
-    nombre: PropTypes.string.isRequired,
-    apellido: PropTypes.string.isRequired,
-    ficha: PropTypes.object
-  };
+        TercerComponente.defaultProps ={
+          nombre: "Stiven",
+          apellido: "Garzon"
+        }
 
-  TercerComponente.defaultProps ={
-    nombre: "Stiven",
-    apellido: "Garzon"
-  }
+    
 
 export default TercerComponente;
