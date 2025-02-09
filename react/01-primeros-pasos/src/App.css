@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+#caja {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border-radius: 2px;
+  color: black;
+  text-align: center;
+  line-height: 200px;
+
+}
