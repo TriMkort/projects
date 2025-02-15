@@ -1,0 +1,14 @@
+1. Crear un componente (Hecho)
+
+2. Recibir una porp con el año actual (Hecho)
+
+3. Ojo, usar funciones para sacar el año (Hecho)
+
+4. Usar estados y eventos para tener dos botones.
+    - Pasar al porximo año (hecho)
+    - Ir al año anterior (hecho)
+    - Mostrar en todo momento el año por pantalla (hecho)
+
+5. Validar que el año sea un numero y que sea requerido (prop) (hecho)
+
+6. Cambiar el año mediante un input de texto y que se cambie dinamicamente (hecho)

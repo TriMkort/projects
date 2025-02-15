@@ -23,7 +23,7 @@ const MiPrimerEstado = () => {
       &nbsp;
       <button onClick={e => cambiarNombre(e, "Stiven")}>Cambiar a Stiven</button>
       &nbsp;
-      <input type='text' onKeyUp={e => cambiarNombre (e, e.target.value)} placeholder="Escribe aquí"></input>
+      <input type='text' onChange={e => cambiarNombre (e, e.target.value)} placeholder="Escribe aquí"></input>
     </div>
   )
 }
