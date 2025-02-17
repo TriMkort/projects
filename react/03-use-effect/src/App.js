@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import PurebaComponet from './componets/PruebaComponet';
+import AjaxComponent from './componets/AjaxComponent';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
       <PurebaComponet/>
+
+      <AjaxComponent/>
       </header>
     </div>
   );

@@ -45,7 +45,7 @@ useEffect(() => {
         <button onClick={cambiarFecha}> Cambiar fecha</button>
       </p>
 
-      {nombre == "MAIKOL" && <AvisoComponent/>}
+      {nombre === "MAIKOL" && <AvisoComponent/>}
 
     </div>
   )
