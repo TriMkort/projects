@@ -18,15 +18,37 @@ const Buscar = () => {
         let titulo = target.titulo.value;
         let descripcion = target.descripcion.value;
 
-        //Crear pelicula
+        //Crear objeto de la pelicula
         let peli = {
             id: new Date().getTime(),
             titulo,
             descripcion,
         };
 
+        //Guarar estado
         setPeliState(peli);
 
+        //Guardar en el almacenamiento local
+        
+        guardarEnStorage(peli);
+    }
+
+    const guardarEnStorage = (peli) => {
+        //Conseguir los elementos que ya hay en el local storage
+        let elements = JSON.parse(localStorage.getItem('pelis'));
+        console.log(elements);
+        
+        //Comprobar si es un array
+        if(Array.isArray(elements)){
+            elements.push(peli);
+        }else{
+            //Crear array de elementos
+            elements = [peli];
+        }
+        //Guardar localstorage
+        localStorage.setItem('pelis',JSON.stringify(elements));
+        //Devolver objeto guardado
+        return peli;
     }
 
     return (
