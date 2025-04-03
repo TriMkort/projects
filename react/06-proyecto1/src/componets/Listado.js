@@ -16,7 +16,7 @@ const Listado = () => {
     }
     
     return (
-        <div>
+        <div className='content'>
             <>
                 {listadoState != null ? 
                         listadoState.map (peli => {
