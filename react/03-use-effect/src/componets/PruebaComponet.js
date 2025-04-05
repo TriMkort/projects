@@ -9,8 +9,7 @@ const PurebaComponet = () => {
 
   const modnombre = (e) => {
     setNombre(e.target.value);
-  }
-
+  };
 
   const cambiarFecha = () => {
     setFecha(new Date().toLocaleString());
@@ -25,17 +24,25 @@ useEffect(() => {
 
 
 useEffect(() => {
-    setContador(contador + 1);
-    console.log("Has modificado la salida de nombre: "+contador);
+    setContador((c) => c + 1);
   }, [fecha, nombre]);
+
+
+  useEffect(() => {    
+    console.log("Has modificado la salida de nombre: "+contador);
+  }, [contador]);
 
   return (
     <div>
       <h2>El efecto hook Use Effect</h2>
 
 
-      <strong className={contador >= 10 ? 'label label-green': 'label'}>{nombre}</strong>
-      <strong className={contador >= 10 ? 'label label-green': 'label'}>{fecha}</strong>
+      <strong className={contador >= 10 ? 'label label-green': 'label'}>
+        {nombre}
+      </strong>
+      <strong className={contador >= 10 ? 'label label-green': 'label'}>
+        {fecha}
+        </strong>
 
       <p>
         <input  type="text" 
@@ -48,7 +55,7 @@ useEffect(() => {
       {nombre === "MAIKOL" && <AvisoComponent/>}
 
     </div>
-  )
-}
+  );
+};
 
 export default PurebaComponet
