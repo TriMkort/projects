@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Crear = () => {
+const Buscar = () => {
     return (
         <div className="search">
             <h3 className="title">Buscar</h3>
@@ -12,4 +12,4 @@ const Crear = () => {
     )
 }
 
-export default Crear
+export default Buscar
