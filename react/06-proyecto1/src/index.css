@@ -19,7 +19,7 @@ body{
       "content content content lateral"
       "footer footer footer footer"
   ;
-  grid-template-rows: 100px 70px auto 70px;
+  grid-template-rows: 80px 70px auto 70px;
 
 }
 
@@ -169,7 +169,8 @@ input[type="button"]{
 
 .lateral input[type="text"],
 .lateral textarea,
-.edit_form input[type="text"]
+.edit_form input[type="text"],
+.edit_form textarea
 {
   display: block;
   margin: 0 auto;
@@ -216,4 +217,8 @@ input[type="button"]{
   .peli-item{
       width: 80%;
   }
+}
+
+.no-encontrado{
+  color: red;
 }
