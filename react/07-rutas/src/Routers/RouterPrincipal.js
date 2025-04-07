@@ -1,10 +1,16 @@
 import React from 'react';
-import { Routes, Route, NavLink, BrowserRouter} from "react-router-dom";
+import { Routes, Route, NavLink, BrowserRouter, Navigate} from "react-router-dom";
 import Inicio from '../componets/Inicio';
 import Contacto from '../componets/Contacto';
 import Articulo from '../componets/Articulo';
-import Nombre from '../componets/Nombre';
 import Error from '../componets/Error';
+import Nombre from '../componets/Nombre';
+import PanelControl from '../componets/PanelControl';
+import InicioPanel from '../componets/panel/InicioPanel';
+import Crear from '../componets/panel/Crear';
+import Acerca from '../componets/panel/Acerca';
+import Gestion from '../componets/panel/Gestion';
+
 
 const RouterPrincipal = () => {
     return (
@@ -44,6 +50,15 @@ const RouterPrincipal = () => {
                     </NavLink>
                 </li>
             </ul>
+            <ul>    
+                <li>
+                    <NavLink 
+                        to="/panel"
+                        className={({isActive}) => isActive ? "activado" : ""}>
+                        Panel Control 
+                    </NavLink>
+                </li>
+            </ul>
 
         </nav>
         <section className='Rutas'>
@@ -53,6 +68,17 @@ const RouterPrincipal = () => {
                 <Route path="/Contacto" element={<Contacto/>}/>
                 <Route path="/Articulo" element={<Articulo/>}/>
                 <Route path="/Nombre/:nombre/:apellido" element={<Nombre/>}/>
+                <Route path="/Nombre/:nombre/" element={<Nombre/>}/>
+                <Route path="/Nombre/" element={<Nombre/>}/>
+                <Route path="/Redirigir" element={<Navigate to="/Nombre/Maikol/Sabogal"/>}/>
+
+                <Route path="/panel/*" element={<PanelControl />}>
+                        <Route index element={<InicioPanel />} />
+                        <Route path="Inicio" element={<InicioPanel />} />
+                        <Route path="Crear" element={<Crear />} /> 
+                        <Route path="Gestion" element={<Gestion />} />
+                        <Route path="Acerca" element={<Acerca />} />
+                </Route>
                 <Route path="*" element={<Error/>}/>
             </Routes>
         </section>
