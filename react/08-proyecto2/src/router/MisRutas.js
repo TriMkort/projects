@@ -5,13 +5,15 @@ import Contacto from '../components/Contacto';
 import Servicios from '../components/Servicios';
 import Portafolio from '../components/Portafolio';
 import Curriculum from '../components/Curriculum';
+import HeaderNav from '../components/layaut/HeaderNav';
+import Footer from '../components/layaut/Footer';
 
 
 const MisRutas = () => {
     return (
         <BrowserRouter>
         {/*HEADER Y NAVEGACION*/}
-        
+        <HeaderNav/>
         {/*  CONTENIDO CENTRLA */}
         <Routes>
             <Route index element={<Inicio/>}/>
@@ -21,8 +23,9 @@ const MisRutas = () => {
             <Route path="/portafolio" element={<Portafolio/>}/>
             <Route path="/curriculum" element={<Curriculum/>}/>
         </Routes>
-        
+        <hr/>
         {/* FOOTER */}
+        <Footer/>
         </BrowserRouter>
     )
 }

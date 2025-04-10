@@ -4,7 +4,8 @@ import MisRutas from './router/MisRutas';
 
 function App() {
   return (
-    <div className="App">
+
+    <div className="layaout">
       <MisRutas/>
     </div>
   );
