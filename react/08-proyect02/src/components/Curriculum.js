@@ -3,7 +3,7 @@ import React from 'react'
 const Curriculum = () => {
   return (
     <div>
-      Curriculum
+      <h1>Curriculum</h1>   
     </div>
   )
 }
