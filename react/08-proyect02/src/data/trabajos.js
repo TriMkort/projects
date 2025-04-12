@@ -1,8 +1,8 @@
 export const trabajos = [
     {
     'id': 'MaikolWeb',
-    'nombre': 'Maikol Sabogal',
-    'url': 'https://maikolsabogal.com',
+    'nombre': 'Pagina de peliculas',
+    'url': 'github.com/TriMkort/REACT/tree/develop/react/06-proyecto1',
     'tecnologias': ['React', 'JavaScript', 'CSS'],
     'categoria' : 'Desarrollo web',
     'descripcion' : 'Portafolio personal de Maikol Sabogal, un desarrollador web full stack.',
@@ -10,7 +10,7 @@ export const trabajos = [
     {
     'id': 'facebook',
     'nombre': 'Facebook',
-    'url': 'https://facebook.com',
+    'url': 'www.facebook.com/',
     'tecnologias': ['React', 'JavaScript', 'CSS'],
     'categoria' : 'Desarrollo web',
     'descripcion' : 'Portafolio personal de Maikol Sabogal, un desarrollador web full stack.',
@@ -18,7 +18,7 @@ export const trabajos = [
     {
     'id': 'twitter',
     'nombre': 'twitter',
-    'url': 'https://twitter.com',
+    'url': 'twitter.com',
     'tecnologias': ['React', 'JavaScript', 'CSS'],
     'categoria' : 'Desarrollo web',
     'descripcion' : 'Portafolio personal de Maikol Sabogal, un desarrollador web full stack.',
@@ -26,7 +26,7 @@ export const trabajos = [
     {
     'id': 'LinkedIn',
     'nombre': 'LinkedIn',
-    'url': 'https://linkedin.com',
+    'url': 'linkedin.com',
     'tecnologias': ['React', 'JavaScript', 'CSS'],
     'categoria' : 'Desarrollo web',
     'descripcion' : 'Portafolio personal de Maikol Sabogal, un desarrollador web full stack.',
@@ -34,7 +34,7 @@ export const trabajos = [
     {
     'id': 'Udemy',
     'nombre': 'Udemy',
-    'url': 'https://udemy.com',
+    'url': 'udemy.com',
     'tecnologias': ['React', 'JavaScript', 'CSS'],
     'categoria' : 'Desarrollo web',
     'descripcion' : 'Portafolio personal de Maikol Sabogal, un desarrollador web full stack.',
